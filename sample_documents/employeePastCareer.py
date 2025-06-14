@@ -1,10 +1,15 @@
 employee_past_career_document ={
-  "employee_id": 1,
+  "employee_id": "E001",
   "past_careers": [
+      {
+      "start_date": "2024-01-01",
+      "job_title": "Chef",
+      "restaurant_id": "R001"
+    },
     {
       "start_date": "2022-01-01",
       "end_date": "2023-12-31",
-      "job_title": "Waiter",
+      "job_title": "Chef",
       "restaurant_id": "R002"
     },
     {

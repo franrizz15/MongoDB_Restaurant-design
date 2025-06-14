@@ -1,21 +1,19 @@
 employee_document = {
-    "employee_id": 1,
-    "name": "Dragos",
-    "contact_info": {
-      "phone": "phone1",
-      "email": "email1"
-    },
+  "employee_id": "E001",
+  "name": "Jane Doe",
+  "contact": {"email": "jane@allorganic.com", "phone": "123456789"},
+
     "qualifications": [
       {
         "type": "academic",
-        "value": "q1",
-        "start_date": "01/01/2025",
-        "end_date": ""
+        "value": "Nutritional Sciences BSc",
+        "start_date": "01/01/2020",
+        "end_date": "01/01/2023"
 
       },
       {
         "type": "professional",
-        "value": "q2",
+        "value": "CTH",
         "status": "Completed",
         "start_date": "01/01/2024",
         "expiry_date": "01/01/2026"

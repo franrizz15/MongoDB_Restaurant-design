@@ -1,0 +1,141 @@
+{
+    "restaurnat": {
+        "$jsonSchema": {
+            "bsonType": "object",
+            "required": [
+                "_id",
+                "address",
+                "closing_time",
+                "name",
+                "opening_time",
+                "restaurant_id"
+            ],
+            "properties": {
+                "_id": {
+                    "bsonType": "objectId"
+                },
+                "address": {
+                    "bsonType": "object",
+                    "properties": {
+                        "address": {
+                            "bsonType": "string"
+                        },
+                        "city": {
+                            "bsonType": "string"
+                        },
+                        "country": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "required": [
+                        "address",
+                        "city",
+                        "country"
+                    ]
+                },
+                "closing_time": {
+                    "bsonType": "string"
+                },
+                "name": {
+                    "bsonType": "string"
+                },
+                "opening_time": {
+                    "bsonType": "string"
+                },
+                "restaurant_id": {
+                    "bsonType": "string"
+                }
+            }
+        }
+    },
+    "employee": {
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": [
+      "_id",
+      "contact",
+      "employee_id",
+      "name",
+      "qualifications"
+    ],
+    "properties": {
+      "_id": {
+        "bsonType": "objectId"
+      },
+      "contact": {
+        "bsonType": "object",
+        "properties": {
+          "email": {
+            "bsonType": "string"
+          },
+          "phone": {
+            "bsonType": "string"
+          }
+        },
+        "required": [
+          "email",
+          "phone"
+        ]
+      },
+      "employee_id": {
+        "bsonType": "string"
+      },
+      "name": {
+        "bsonType": "string"
+      },
+      "qualifications": {
+        "bsonType": "array",
+        "items": {
+          "bsonType": "object",
+          "properties": {
+            "end_date": {
+              "bsonType": "string"
+            },
+            "expiry_date": {
+              "bsonType": "string"
+            },
+            "start_date": {
+              "bsonType": "string"
+            },
+            "status": {
+              "bsonType": "string"
+            },
+            "type": {
+              "bsonType": "string"
+            },
+            "value": {
+              "bsonType": "string"
+            }
+          },
+          "required": [
+            "start_date",
+            "type",
+            "value"
+          ]
+        }
+      }
+    }
+  }
+},
+    "discountThreshold": {
+        "$jsonSchema": {
+            "bsonType": "object",
+            "required": [
+                "_id",
+                "max_discount",
+                "update_date"
+            ],
+            "properties": {
+                "_id": {
+                    "bsonType": "objectId"
+                },
+                "max_discount": {
+                    "bsonType": "double"
+                },
+                "update_date": {
+                    "bsonType": "string"
+                }
+            }
+        }
+    }
+}
