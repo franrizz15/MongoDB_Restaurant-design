@@ -61,11 +61,19 @@ restaurant_ingredients_source_document = {
 # Pattern: Extended Reference Pattern + Subset Pattern (for names)
 # Pattern: Extended Reference Pattern (references to restaurant, supplier, ingredient, dish)
 
-dish_served_document = {
-    "restaurant_order_id": "O001",
-    "dish_id": "D001",
+dish_served = {
     "restaurant_id": "R001",
     "date": "2025-06-14",
-    "loyal": True
+    "dishes": [
+        {
+            "dish_id": "D001",
+            "total_served": 30,
+            "loyal_served": 10
+        },
+        {
+            "dish_id": "D002",
+            "total_served": 20,
+            "loyal_served": 5
+        }
+    ]
 }
-# Pattern: Extended Reference Pattern (references to order, dish, restaurant)

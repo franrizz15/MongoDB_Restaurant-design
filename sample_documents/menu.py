@@ -5,10 +5,14 @@ dish_document = {
 
 menu_document = {
   "menu_id": "M001",
-  "start_date": "2025-06-01",
+  "start_date": "2025-01-01",
   "end_date": "2025-06-30",
-  "dishes": ["D001", "D002", "D003"]
+  "dishes": [
+    { "dish_id": "D001", "name": "Margherita Pizza" },
+    { "dish_id": "D002", "name": "Pepperoni Pizza" }
+  ]
 }
+
 
 # These are the MongoDB design patterns used in the menu.json file:
 # Subset/Extended Reference Pattern: The dishes array references dish IDs. 

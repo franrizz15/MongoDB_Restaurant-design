@@ -6,8 +6,15 @@ restaurant_document = {
     "city": "Oxford",
     "country": "UK"
   },
-  "opening_time": "2025-06-14T08:00:00Z",
-  "closing_time": "2025-06-14T22:00:00Z"
+  "hours": {
+    "Monday":    {"open": "08:00", "close": "22:00"},
+    "Tuesday":   {"open": "08:00", "close": "22:00"},
+    "Wednesday": {"open": "08:00", "close": "22:00"},
+    "Thursday":  {"open": "08:00", "close": "22:00"},
+    "Friday":    {"open": "08:00", "close": "23:00"},
+    "Saturday":  {"open": "09:00", "close": "23:00"},
+    "Sunday":    {"open": "11:00", "close": "21:00"}
+  }
 }
 
 # These are the MongoDB design patterns used in the restaurant.json file:
